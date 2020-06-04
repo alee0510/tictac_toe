@@ -112,7 +112,6 @@ function reset () {
     info.textContent = ''
     info.hidden = true
     board.hidden = true
-    console.log(data)
 }
 
 showGameBoard()
