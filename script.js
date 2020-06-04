@@ -41,20 +41,8 @@ function playerPlay (i, j) {
     data[i][j] = player ? 1 : 0
     
     showGameBoard()
-    
-    // check winner
-    status = [
-        checkHorizontal(data, player), 
-        checkVertical(player), 
-        checkCross(player)
-    ].includes(true)
 
-    if (status || checkDraw()) {
-        info.textContent = status ? `Player ${player ? 'O' : 'X'} WIN` : `DRAW!`
-        document.getElementsByTagName('button')[2].hidden = false
-        status = true
-        return
-    }
+    if (checkWinner()) return
 
     changePlayer()
 }
@@ -62,6 +50,24 @@ function playerPlay (i, j) {
 function changePlayer () {
     player = player ? 0 : 1
     info.textContent = player ? 'O turn' : 'X turn'
+}
+
+
+function checkWinner () {
+    status = [
+        checkHorizontal(data, player), 
+        checkVertical(player), 
+        checkCross(player)
+    ].includes(true)
+    
+    if (status || checkDraw()) {
+        info.textContent = status ? `Player ${player ? 'O' : 'X'} WIN` : `DRAW!`
+        document.getElementsByTagName('button')[2].hidden = false
+        status = true
+        return true
+    }
+
+    return false
 }
 
 function checkHorizontal (data, player) {
