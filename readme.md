@@ -3,6 +3,7 @@
 - NOTE : yet, doesn't support for mobile device (ongoing)
 - still in early stage
 
+### Demo : [tic-tact toe](https://alee0510.github.io/tictac_toe/)
 ### Screenshot
 ![Screenshot](screenshot_desktop.jpg)
 
