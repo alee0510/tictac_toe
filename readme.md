@@ -1,4 +1,4 @@
-### Here, I create simple Tic-tac Toe game using HTML+ Vanilla JavaScript 
+### Here, I create a simple Tic-tac Toe game using HTML+ Vanilla JavaScript 
 ![Twitter Follow](https://img.shields.io/twitter/follow/a_lee0510?style=social)![GitHub followers](https://img.shields.io/github/followers/alee0510?style=social)
 
 - NOTE : yet, doesn't support for mobile device (ongoing)
